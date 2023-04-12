@@ -1,0 +1,218 @@
+body {
+    overflow-x: hidden;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #4c8cae;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4c8cae;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #4c8cae;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 68%;
+    top: 10.5%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+}
+
+.contenido-modal {
+    position: flex;
+    background-color: #4c8cae;
+    margin: auto;
+    width: 32%;
+    animation-name: modal;
+    animation-duration: 0.1s;
+    z-index: 2;
+}
+
+@keyframes modal {
+    from {
+        top: -300px;
+        opacity: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.close {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.close:hover {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-header,
+.footer {
+    padding: 8px 16px;
+    background: #4c8cae;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-body {
+    padding: 20px 16px;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width:900px) {
+    .contenido-modal {
+
+        width: 70%; 
+        position: relative;
+        z-index: 2;
+    }
+
+    .textos {
+        padding: 150px; 
+        position: relative;
+        z-index: 2;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .textos {
+        padding: 70px;
+        position: relative;
+        z-index: 2;
+
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #4c8cae;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+header {
+    text-align: center;
+    color: #ffffff;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background: url(../img/beautiful-pet-portrait-small-dog-cat.jpg) no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+        position: relative;
+        z-index: 2;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.color {
+
+color: #000000;
+
+}

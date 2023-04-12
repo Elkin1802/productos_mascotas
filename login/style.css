@@ -1,0 +1,13 @@
+body {
+
+    background: #4c8cae;
+    background: linear-gradient(to right, #4c8cae, #4c8cae);
+
+}
+
+.bg {
+
+    background-image: url(../img/login/lovely-pet-portrait-isolated.jpg);
+    background-position: center center;
+    
+    }
